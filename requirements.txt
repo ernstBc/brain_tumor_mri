@@ -1,4 +1,7 @@
 tensorflow
-tfx
+scikit-learn
+pandas
+kagglehub
 ipykernel
+python-dotenv
 -e .
