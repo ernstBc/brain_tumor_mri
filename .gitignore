@@ -123,6 +123,8 @@ celerybeat.pid
 
 # Environments
 /catboost_info
+artifacts/tuner_artifacts/untitled_project/
+logs/
 data
 .env
 .venv
