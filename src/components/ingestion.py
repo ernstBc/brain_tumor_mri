@@ -114,14 +114,20 @@ def split_dataset(data_path:str,
 
             for element in train:
                 os.makedirs(os.path.join(train_path, category), exist_ok=True)
+                if len(os.listdir(os.path.join(train_path, category))) >= num_train-1:
+                    break
                 shutil.copy(os.path.join(data_path, category, element), os.path.join(train_path, category, element))
 
             for element in val:
                 os.makedirs(os.path.join(val_path, category), exist_ok=True)
+                if len(os.listdir(os.path.join(val_path, category))) >= num_val-1:
+                    break
                 shutil.copy(os.path.join(data_path, category, element), os.path.join(val_path, category, element))
 
             for element in test:
                 os.makedirs(os.path.join(test_path, category), exist_ok=True)
+                if len(os.listdir(os.path.join(test_path, category))) >= num_test-1:
+                    break
                 shutil.copy(os.path.join(data_path, category, element), os.path.join(test_path, category, element))
         
 
