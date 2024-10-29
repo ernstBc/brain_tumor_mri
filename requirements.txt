@@ -4,4 +4,7 @@ pandas
 kagglehub
 ipykernel
 python-dotenv
+matplotlib
+Pillow
+keras-tuner
 -e .
